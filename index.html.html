@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style> 
+	:root {
+            --tiffany-blue: #0ABAB5;
+            --elegant-white: #f8f8f8;
+            --dark-text: #333;
+            --light-gray: #f5f5f5;
+        }
+	 * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+	 body {
+            font-family: 'Garamond', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: white;
+            padding-top: 70px;
+        }
+	 .navbar {
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+          
+        }
+	.navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 95%;
+            margin: 0 auto;
+            max-width: 1400px;
+            position: relative;
+        }
+	.logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--tiffany-blue);
+            letter-spacing: 1.5px;
+        }
+	.nav-links {
+            display: flex;
+            list-style: none;
+        }
+	.nav-links > li {
+            margin: 0 12px;
+            position: relative;
+    
+        }
+	 .section-title {
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 400;
+		 
+        }
+	 .collections-grid {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+	.collection-item {
+            flex-basis: calc(33.333% - 20px);
+		 }
+
+        .collection-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+	.about-brand {
+            background-color: var(--light-gray);
+        }
+	.about-brand-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+	 .watches-section {
+            padding: 80px 0;
+            text-align: center;
+            display: none; /* Hidden by default */
+        }
+
+        .watches-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+       
+
+        .watch-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .watch-info {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .watch-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--tiffany-blue);
+        }
+
+        .watch-info p {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+		
+	
+	</style>
+</head>
+
+<body>
+<video width="100%" height="auto" controls autoplay muted>
+  <source src="image/2025_VDAY_HP_LOCK_Desktop.mp4" type="video/mp4">
+ </video>
+<nav class="navbar">
+        <div class="navbar-content">
+          <div class="logo">TIFFANY & CO.</div>
+<ul class="nav-links">
+      <li>
+      <a href="#" class="nav-link" data-section="main-content">High Jewelry</a>                </li>
+      <li>
+                    <a href="#" class="nav-link" data-section="main-content">Jewelry</a>                </li>
+                <li><a href="#" class="nav-link" data-section="main-content">Love & Engagement</a></li>
+                <li><a href="watch.html" class="nav-link" data-section="main-content">Fine Watches</a></li>
+      <li><a href="#" class="nav-link" data-section="main-content">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="main-content">Accessories</a></li>
+                <li><a href="#" class="nav-link" data-section="main-content">Gifts</a></li>
+                <li><a href="#" class="nav-link" data-section="main-content">Stories</a></li>
+          </ul>
+        </div>
+    </nav>
+	 </section>
+
+        <section id="collections" class="collections">
+            <h2 style="text-align: center" class="section-title">Our Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-item">
+                    <img src="https://media.tiffany.com/is/image/tiffanydm/2025_VDAY_HP_SBC_EngagementRings?$tile$&&fmt=webp" alt="Engagement Rings">
+                    <h3 style="text-align: center ">Engagement Rings</h3>
+                </div>
+                <div class="collection-item">
+                    <div class="collection-item">
+                        <img src="C:\Users\SHIKHA  S NAIR\Documents\Adobe Dreamweaver\tiffany website\image\tiffany-lockearrings-72342798_1082676_ED.webp" alt="Tiffany T Collection">
+					
+                    </div>
+                    <h3 style="text-align: center">Tiffany T Collection</h3>
+                </div>
+                <div class="collection-item">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Tiffany Setting">
+                    <h3 style="text-align: center">Tiffany Setting</h3>
+                </div>
+            </div>
+        </section>
+
+      <section class="about-brand">
+            <div class="about-brand-content">
+                <h2 style="margin-bottom: 20px; letter-spacing: 2px;">Our Legacy</h2>
+                <p>Since 1837, Tiffany & Co. has been the world's premier jeweler and America's house of design, embodying extraordinary creativity, expertise, and innovation.</p>
+                <a href="#company-history" class="hero-btn" style="margin-top: 30px; display: inline-block;">Our Story</a>
+            </div>
+      </section>
+</div>
+
+
+    <section id="watches-section" class="watches-section">
+        <div class="hero" style="background-image: url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')">
+            <div class="hero-content">
+                <h1>Tiffany Timepieces</h1>
+                <p>Precision Crafted Luxury Watches</p>
+                <a href="#watches-collections" class="hero-btn">View Collection</a>
+            </div>
+        </div>
+
+        <div id="watches-collections" class="watches-collections">
+            <h2 class="section-title">Our Watch Collections</h2>
+            <div class="watches-grid">
+                <div class="watch-item">
+                    <img src="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-ct603-hand-40-mm-watch-74863280_1079579_ED.jpg?defaultImage=NoImageAvailableInternal&fmt=webp" alt="Tiffany CT60 Watch">
+                  <div class="watch-info">
+                        <h3>Tiffany CT60</h3>
+                    <p>Inspired by a 1945 Tiffany watch owned by Franklin Roosevelt, featuring a classic American design with Swiss precision.</p>
+</div>
+                </div>
+                
+                <div class="watch-item">
+                    <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-eternity28-mm-round-watch-73580641_1063345_ED.jpg?&op_usm=1.5,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Tiffany Metro Watch">
+                  <div class="watch-info">
+                        <h3>Tiffany Metro</h3>
+                    <p>A sleek, modern timepiece with Swiss-made movement and Tiffany's signature blue dial, perfect for everyday elegance.</p>
+</div>
+                </div>
+                
+                <div class="watch-item">
+                    <img src="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-east-west-automatic3-hand-465-x-275-mm-watch-36813938_963066_ED.jpg?defaultImage=NoImageAvailableInternal&fmt=webp" alt="Tiffany East West Watch">
+                  <div class="watch-info">
+                        <h3>Tiffany East West</h3>
+                    <p>An unconventional timepiece with a horizontal dial, blending art deco inspiration with contemporary design for a truly unique statement.</p>
+</div>
+                </div>  
+    </section>
+
+  <footer style="font-weight: bold; color: white; background-color: var(--dark-text); color: white; padding: 60px 0 40px; text-align: center;display: flex;justify-content:center;margin-top: centre; flex-wrap: wrap; color: white; margin: 15px; letter-spacing: 1px"class="footer">
+        <div class="footer-links">
+            <a href="#">Customer Service</a>
+             <a href="#">Find a Store </a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>
